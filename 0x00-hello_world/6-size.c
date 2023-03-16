@@ -4,7 +4,7 @@
 *
 *Return: always 0 (success)
 */
-int main()
+int main(void)
 {
 	printf("sizeof a char is : %d - byte(s)\n", sizeof(char));
 	printf("sizeof an int is : %d - byte(s)\n", sizeof(int));
