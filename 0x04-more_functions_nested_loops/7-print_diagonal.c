@@ -1,27 +1,26 @@
 #include "main.h"
 
 /**
-   *print_diagonal- prints line
-    *@n: checked
+   * print_diagonal - prints diagonal line
+    * @n: length of line
      * Return: nothing
-      */
+      **/
+
 void print_diagonal(int n)
 {
-	int  i, j;
+	int x, y;
 
-	for (i = 1; i <= n; ++i)
+	for (y = 1; y <= n; y++)
 	{
-		for (j = 1; j <= i; ++j)
+		for (x = 1; x < y; x++)
 		{
-			if (j < i)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar('\\');
-			}
+			_putchar(' ');
 		}
+		_putchar('\\');
+		_putchar('\n');
+	}
+	if (n < 1)
+	{
 		_putchar('\n');
 	}
 }
