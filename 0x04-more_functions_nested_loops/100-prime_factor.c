@@ -1,25 +1,32 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
-   * main - entry point
+   * main - find prime number
     *
-     * Return: always 0 (sucess)
-      */
+     * Description: find largest prime number of 612852475143
+      *
+       * Return: zero
+	**/
+
 int main(void)
 {
-	unsigned long int num = 612852475143;
-	unsigned long int prim;
+	long int max, lower, test;
 
-	prim = 3;
-	while (prim < num / 2)
+	max = 612852475143;
+	lower = 2;
+	test = 2;
+
+	while (max > test)
 	{
-		if ((num % prim) == 0)
+		if (max % test == 0)
 		{
-			if ((prim % 3) == 2)
-			printf(",%lu ", prim);
+			lower = test;
+			max = max / lower;
+			test = lower + 1;
 		}
-		prim += 2;
+		else
+			test++;
 	}
-	putchar('\n');
+	printf("%ld\n", max);
 	return (0);
 }
