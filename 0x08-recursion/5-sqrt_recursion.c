@@ -6,7 +6,7 @@
      * @b:int
       *
        * Return: int
-        */
+	*/
 int check(int a, int b)
 {
 	if (a * a == b)
