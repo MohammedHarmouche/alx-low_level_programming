@@ -7,7 +7,7 @@
      *@min: first value of the array
       *Return: NULL if min > max and if array equall to NULL
        *        otherwise an array
-        */
+	*/
 int *array_range(int min, int max)
 {
 	int *ar;
