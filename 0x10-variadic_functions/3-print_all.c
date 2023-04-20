@@ -4,6 +4,7 @@
    * print_all - print all type
      * @format: is a list of types of arguments passed to the function
 	*/
+
 void print_all(const char * const format, ...)
 {
 	va_list valist;
@@ -23,7 +24,6 @@ void print_all(const char * const format, ...)
 				break;
 			} j++;
 		}
-
 		switch (format[i])
 		{
 			case 'c':
