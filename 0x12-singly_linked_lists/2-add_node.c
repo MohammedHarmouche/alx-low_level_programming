@@ -2,12 +2,11 @@
 #include<string.h>
 
 /**
-   * add_node - appends a node to the head
-    * @head: address to a node list_t
-     * @str: a string to add to the lists content
-      *
+    * add_node - appends a node to the head
+     * @head: address to a node list_t
+      * @str: a string to add to the lists content
        * Return: pointer to a list_t.
-        */
+	*/
 
 list_t *add_node(list_t **head, const char *str)
 {
@@ -36,6 +35,6 @@ list_t *add_node(list_t **head, const char *str)
 	nptr->len = len;
 	nptr->next = *head;
 	*head = nptr;
-	
+
 	return (nptr);
 }
