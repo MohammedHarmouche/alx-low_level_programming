@@ -14,9 +14,7 @@ size_t print_listint_safe(const listint_t *head)
 		while (slow_p && fast_p && fast_p->next)
 		{
 			if (!(fast_p->next->next))
-			{
 				break;
-			}
 			slow_p = slow_p->next;
 			fast_p = fast_p->next->next;
 			if (slow_p == fast_p)
